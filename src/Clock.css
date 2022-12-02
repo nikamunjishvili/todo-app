@@ -1,0 +1,22 @@
+.clock{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+}
+.ChildClock{
+    margin: 10px;
+}
+.ChildClock p{
+font-weight: bold;
+font-size: 35px;
+line-height: 10px;
+color: #fff;
+}
+@media only screen and (max-width: 410px){
+    .ChildClock p{
+        font-size: 30px;        
+        }
+}

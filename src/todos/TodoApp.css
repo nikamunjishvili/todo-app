@@ -1,0 +1,160 @@
+.completed{
+    text-decoration: line-through;
+    color: grey;
+    transition: 1s;
+}
+i{
+    margin:15px;
+}
+li{
+    list-style-type: none;
+    margin: 0px 20px;
+    padding: 0;
+    font-size: 28px;
+}
+.ToDo{
+    width: 430px;
+    height: 600px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.iconDiv{
+  position: relative;
+}
+.iconDiv i{
+  position: absolute;
+  top: -30px;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+button{
+background: #20EEB0;
+border-radius: 5px;
+margin: 10px;
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 17px;
+cursor: pointer;
+}
+.icon{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+.bgImageContainer{
+    padding: 0;
+    position: relative;
+    margin: 0;
+    width: 430px;
+    height: 202px;
+    background-image:url(../todos/assets/flowers.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.container {
+    display: block;
+    position: relative;
+    /* padding-left: 35px; */
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  input[type=text], select {
+    display: block;
+    width: 305px;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .textInput:placeholder-shown{
+    color: grey;
+  }
+  .textInput:focus{
+    outline: none;
+  }
+  .checkmark {
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border-radius:50%;
+    border:2px solid #20EEB0;
+    cursor: pointer;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #20EEB0;
+  }
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }  
+  .para{
+    font-size: 12px;
+  }
+  /* Responsive */
+  @media only screen and (max-width: 410px) {
+    .ToDo{
+      width: 330px;
+      height: 500px;
+  }
+  .bgImageContainer{
+    width: 330px;
+    height: 195px;
+}
+input[type=text], select {
+  width: 220px;
+  height: 50px;
+}
+.checkmark {
+  height: 15px;
+  width: 15px;
+}
+.iconDiv i{
+  font-size: 18px;
+}
+}
